@@ -1,4 +1,4 @@
-# java-selenium-cucumber demo project
+# java-selenium-cucumber demo project [![Java CI with Maven](https://github.com/lvasileva/java-selenium-cucumber/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/lvasileva/java-selenium-cucumber/actions/workflows/maven.yml)
 
 Here is the project of cucumber features running tests for the demo site at: https://www.saucedemo.com/
 
