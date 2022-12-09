@@ -1,6 +1,6 @@
 # java-selenium-cucumber demo project
 
-The test run is scheduled to be started at 09:00 UTC on every Monday. The badge is presented the last state of the run. [![Java CI with Maven](https://github.com/lvasileva/java-selenium-cucumber/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/lvasileva/java-selenium-cucumber/actions/workflows/maven.yml)
+This project is configured to run only with GitHub Actions. The test run is scheduled to be started at 09:00 UTC on every Monday. The badge is presented the last state of the run. [![Java CI with Maven](https://github.com/lvasileva/java-selenium-cucumber/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/lvasileva/java-selenium-cucumber/actions/workflows/maven.yml)
 
 Here is the project of cucumber features running tests for the demo site at: https://www.saucedemo.com/
 
