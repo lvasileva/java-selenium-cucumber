@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: example.qa.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.486 s - in example.qa.RunCucumberTest

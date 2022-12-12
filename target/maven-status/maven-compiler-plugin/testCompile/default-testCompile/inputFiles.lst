@@ -1,0 +1,11 @@
+C:\code\github\src\test\java\example.qa\steps\SampleSteps.java
+C:\code\github\src\test\java\example.qa\pages\CartPage.java
+C:\code\github\src\test\java\example.qa\Context.java
+C:\code\github\src\test\java\example.qa\data\FieldValues.java
+C:\code\github\src\test\java\example.qa\pages\BasePage.java
+C:\code\github\src\test\java\example.qa\pages\LoginPage.java
+C:\code\github\src\test\java\example.qa\steps\Setup.java
+C:\code\github\src\test\java\example.qa\pages\HomePage.java
+C:\code\github\src\test\java\example.qa\pages\CheckOutPage.java
+C:\code\github\src\test\java\example.qa\pages\ConfirmCheckOutPage.java
+C:\code\github\src\test\java\example.qa\RunCucumberTest.java
