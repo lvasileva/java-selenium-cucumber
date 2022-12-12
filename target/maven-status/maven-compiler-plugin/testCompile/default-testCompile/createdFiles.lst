@@ -1,0 +1,11 @@
+example\qa\pages\BasePage.class
+example\qa\pages\LoginPage.class
+example\qa\pages\ConfirmCheckOutPage.class
+example\qa\steps\SampleSteps.class
+example\qa\data\FieldValues.class
+example\qa\Context.class
+example\qa\RunCucumberTest.class
+example\qa\steps\Setup.class
+example\qa\pages\CartPage.class
+example\qa\pages\HomePage.class
+example\qa\pages\CheckOutPage.class
