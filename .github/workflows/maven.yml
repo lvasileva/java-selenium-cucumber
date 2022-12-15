@@ -40,7 +40,7 @@ jobs:
       if: success() || failure()    
       with:
           name: Tests            
-          path: target/cucumber.xml    
+          path: target/surefire-reports/TEST-example.qa.RunCucumberTest.xml    
           reporter: java-junit      
 #     - name: Allure Report action from marketplace
 #       uses: simple-elf/allure-report-action@master
