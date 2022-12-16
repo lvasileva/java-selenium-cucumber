@@ -1,6 +1,7 @@
 package example.qa.steps;
 
 import example.qa.Context;
+import example.qa.data.User;
 import example.qa.pages.CartPage;
 import example.qa.pages.CheckOutPage;
 import example.qa.pages.ConfirmCheckOutPage;
@@ -36,10 +37,10 @@ public class SampleSteps {
     }
 
     @And("login as {string} user")
-    public void loginAsUser(String username) {
+    public void loginAsUser(String userRef) {
 
-
-        homePage = loginPage.login(username, "secret_sauce");
+        User myUser = getUserByUserRef(userRef);
+        homePage = loginPage.login(myUser.getUserName(), myUser.getPassword());
     }
 
     @Then("user sees the list of items")
@@ -50,10 +51,10 @@ public class SampleSteps {
     }
 
     @Given("{string} user is logged in")
-    public void isLoggedIn(String username) {
+    public void isLoggedIn(String userRef) {
 
         userVisitsTheSite();
-        loginAsUser(username);
+        loginAsUser(userRef);
     }
 
     @When("user add all items to the cart")
@@ -128,5 +129,24 @@ public class SampleSteps {
         cartPage.removeSeveralItemsFromShoppingCartByName(names);
         checkOutPage = cartPage.checkOut();
 
+    }
+
+    private User getUserByUserRef(String userRef) {
+        User myUser = new User();
+        List<User> userList = Context.getUsers();
+        boolean found = false;
+        for (User user : userList) {
+            if (user.getUserRef().equals(userRef)) {
+                found = true;
+                if (user.getUserName().isEmpty()) {
+                    Assert.fail("Username of the user with user reference " + userRef + " is empty. Cannot use on the tests run.");
+                }
+                myUser = user;
+                break;
+            }
+        }
+        if (!found)
+            Assert.fail("Cannot find the user with user reference " + userRef + " in user json file. Please make sure the user exists");
+        return myUser;
     }
 }
